@@ -1,0 +1,131 @@
+$pale-blue: #e0e8ff;
+$bright-blue: #3829e0;
+$very-pale-blue: #f5f7ff;
+$desaturated-blue: #7280a7;
+$dark-blue: #1f2f56;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    .background_svg {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .card_bg {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card {
+            max-width: 400px;
+            text-align: center;
+            background-color: $very-pale-blue;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 5px 5px 25px $desaturated-blue;
+            .hero_svg {
+                width: 100%;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2rem;
+                padding: 0.5rem 1rem;
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                    color: $dark-blue;
+                    margin-bottom: 1rem;
+                }
+                .subtitle {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: $desaturated-blue;
+                    margin: 0 1rem;
+                    margin-bottom: 1rem;
+                }
+                .plan {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+                    .plan_type {
+                        font-size: 1rem;
+                        color: $dark-blue;
+                        font-weight: 700;
+                        span {
+                            display: block;
+                            color: $desaturated-blue;
+                            font-size: 1rem;
+                            font-weight: 400;
+                        }
+                    }
+                    button {
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        color: $bright-blue;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        position: relative;
+                        text-decoration: underline;
+                        &:hover {
+                            color: $desaturated-blue;
+                        }
+                    }
+                }
+                & > button {
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    padding: 0.8rem 0.5rem;
+                    border-radius: 0.5rem;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    margin: 0.3rem 0;
+                    cursor: pointer;
+                }
+                .btn1 {
+                    background-color: $bright-blue;
+                    color: $pale-blue;
+                    &:hover {
+                        background-color: $desaturated-blue;
+                    }
+                }
+                .btn2 {
+                    background-color: $very-pale-blue;
+                    color: $desaturated-blue;
+                    margin-bottom: 1rem;
+                    &:hover {
+                        color: $dark-blue;
+                    }
+                }
+            }
+        }
+    }
+}

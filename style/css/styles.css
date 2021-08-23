@@ -1,0 +1,170 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+main .background_svg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+main .card_bg {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .card_bg .card {
+  max-width: 400px;
+  text-align: center;
+  background-color: #f5f7ff;
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 25px #7280a7;
+          box-shadow: 5px 5px 25px #7280a7;
+}
+
+main .card_bg .card .hero_svg {
+  width: 100%;
+}
+
+main .card_bg .card .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+main .card_bg .card .container h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1f2f56;
+  margin-bottom: 1rem;
+}
+
+main .card_bg .card .container .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7280a7;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+main .card_bg .card .container .plan {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+main .card_bg .card .container .plan .plan_type {
+  font-size: 1rem;
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+main .card_bg .card .container .plan .plan_type span {
+  display: block;
+  color: #7280a7;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main .card_bg .card .container .plan button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #3829e0;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  text-decoration: underline;
+}
+
+main .card_bg .card .container .plan button:hover {
+  color: #7280a7;
+}
+
+main .card_bg .card .container > button {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0.3rem 0;
+  cursor: pointer;
+}
+
+main .card_bg .card .container .btn1 {
+  background-color: #3829e0;
+  color: #e0e8ff;
+}
+
+main .card_bg .card .container .btn1:hover {
+  background-color: #7280a7;
+}
+
+main .card_bg .card .container .btn2 {
+  background-color: #f5f7ff;
+  color: #7280a7;
+  margin-bottom: 1rem;
+}
+
+main .card_bg .card .container .btn2:hover {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=styles.css.map */
